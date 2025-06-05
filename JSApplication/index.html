@@ -2,12 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Bookshelf</title>
+    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <h1>Compendium of Books</h1>
+    </header>
+    <div class="container">
+      <div class="header">
+        <div id="image-container">
+          <img src="" alt="" id="bookImage"></img>
+        </div>
+      </div>
+
+      <div class="form">
+        <div class="left">
+          <h2>Book Information</h2>
+          <label for="bookName">Book Name:</label>
+          <input type="text" id="bookName" name="bookName" required></input>
+
+          <label for="isbn">ISBN Number:</label>
+          <div class="input-icon">
+            <input type="text" id="isbn" name="isbn" required></input>
+            <i class="fa fa-search"></i>
+          </div>
+
+          <label for="authorName">Author Name:</label>
+          <input type="text" id="authorName" name="authorName" required></input>
+
+        </div>
+      
+        <div class="right">
+          <h2>Additional Information</h2>
+          <label for="publishedDate">PublishedDate:</label>
+          <input type="date" id="publishedDate" name="publishedDate" required></input>
+
+          <label for="genreInput">Published Date:</label>
+          <input type="text" id="genreInput" name="genreInput" required></input>
+
+          <label for="description">Published Date:</label>
+          <textarea id="description" name="description" rows="5" required></textarea>
+        </div>
+      
+        <div class="button-container">
+          <button type="button" class="btns">Submit</button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
