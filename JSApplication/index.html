@@ -5,16 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> 
     <link rel="stylesheet" type="text/css" href="./src/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Compendium of Books</h1>
+      <h1>Reader's Compendium</h1>
     </header>
     <div class="container">
       <div class="header">
         <div id="image-container">
-          <img src="" alt="" id="bookImage"></img>
+          <img src="https://static.vecteezy.com/system/resources/previews/012/243/160/non_2x/open-book-icon-cartoon-png.png" alt="" id="bookImage"></img>
         </div>
       </div>
 
@@ -27,7 +28,7 @@
           <label for="isbn">ISBN Number:</label>
           <div class="input-icon">
             <input type="text" id="isbn" name="isbn" required></input>
-            <i class="fa fa-search"></i>
+            <i id="searchBtn" onclick="ValidateIsbnAndSearchBook()" class="fa fa-search"></i>
           </div>
 
           <label for="authorName">Author Name:</label>
@@ -40,16 +41,16 @@
           <label for="publishedDate">PublishedDate:</label>
           <input type="date" id="publishedDate" name="publishedDate" required></input>
 
-          <label for="genreInput">Published Date:</label>
+          <label for="genreInput">Genre:</label>
           <input type="text" id="genreInput" name="genreInput" required></input>
 
-          <label for="description">Published Date:</label>
+          <label for="description">Description:</label>
           <textarea id="description" name="description" rows="5" required></textarea>
         </div>
       
-        <div class="button-container">
-          <button type="button" class="btns">Submit</button>
-        </div>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btns">Submit</button>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>
